@@ -1,13 +1,13 @@
 # MNW Thinking Skill
 
-> 密涅瓦思考專家——一個 Claude Code skill，當你帶著問題/決策/困惑來諮詢時，從 76 個密涅瓦思考習慣（Habits of Mind, HCs）中挑 2-4 個最合適的角度切入，跟你討論而不是教你。
+> 密涅瓦思考專家——一個 Claude Code skill，當你帶著問題/決策/困惑來諮詢時，從 76 個密涅瓦思考角度（Habits of Cognition）中挑 2-4 個最合適的切入，跟你討論而不是教你。
 
 ## 這是什麼
 
 **MNW 不是導師，是思考夥伴**。它的工作是：
 
 1. **診斷**——你真正的問題（常常不是表面那個）
-2. **挑 HC**——從 76 個密涅瓦思考習慣裡挑 2-4 個最貼題的角度
+2. **挑角度**——從 76 個密涅瓦思考角度裡挑 2-4 個最貼題的
 3. **討論**——用這些角度問你問題，**不給答案，給下一個該想的問題**
 
 ## 安裝（一行）
@@ -26,7 +26,7 @@ git clone https://github.com/charlesjr0719dev/mnw-thinking-skill.git ~/.claude/s
 - 「MNW 怎麼看」
 - 「MNW 我想請教」
 - 「用密涅瓦角度看」
-- 「幫我用 HC 分析」
+- 「幫我用思考角度分析」
 
 或直接丟一個需要思考框架協助的問題給 MNW。
 
@@ -41,21 +41,23 @@ git clone https://github.com/charlesjr0719dev/mnw-thinking-skill.git ~/.claude/s
     ├── 02-創意思考.md
     ├── 03-有效溝通.md
     ├── 04-有效互動.md
-    └── HC/                      # 76 個 HC 個別筆記
+    └── HC/                      # 76 個思考角度個別筆記
         ├── 01-批判性思考/       # 5 子類
         ├── 02-創意思考/         # 3 子類
         ├── 03-有效溝通/         # 2 子類
         └── 04-有效互動/         # 4 子類
 ```
 
+> 註：資料夾名稱沿用密涅瓦原始的 `HC`（Habits of Cognition）以保持與既有筆記的相容性。內文一律用「**思考角度**」這個更直觀的中文。
+
 ## 如何運作
 
 當你觸發 MNW 後，Claude 會：
 
 1. 讀 `SKILL.md` 了解 MNW 的工作流
-2. 讀 `knowledge-base/密涅瓦思考習慣.md` 抓 76 個 HC 的地圖
-3. 根據你的問題挑 2-4 個 HC
-4. 需要某個 HC 細節時才讀對應的個別筆記檔
+2. 讀 `knowledge-base/密涅瓦思考習慣.md` 抓 76 個思考角度的地圖
+3. 根據你的問題挑 2-4 個角度
+4. 需要某個角度細節時才讀對應的個別筆記檔
 
 ## 範例對話
 
@@ -65,7 +67,7 @@ git clone https://github.com/charlesjr0719dev/mnw-thinking-skill.git ~/.claude/s
 MNW：
 診斷：你表面在問「要不要買」，但真正卡的是「不確定下游用途」。
 
-建議用這 2 個角度：
+建議從這 2 個角度切入：
 - [[效用]]：買了之後下一步具體要做什麼？
 - [[約束條件]]：預算、時間、現有設備能不能撐？
 
@@ -75,10 +77,10 @@ MNW：
 
 ## ⚠️ Disclaimer
 
-這是基於 [Minerva University](https://www.minerva.edu/) 的 **Habits of Mind (HoMs) 框架**，由 AI 輔助整理的個人學習筆記。
+這是基於 [Minerva University](https://www.minerva.edu/) 的 **Habits of Cognition (HoCs) 框架**，由 AI 輔助整理的個人學習筆記。
 
 - 內容為作者個人詮釋，不代表 Minerva 官方教材
-- 原始 HoMs 框架版權歸 Minerva 大學所有
+- 原始 HoCs 框架版權歸 Minerva 大學所有
 - 本 repo 僅供個人學習與思考輔助使用，請勿商用
 
 如果你是 Minerva 大學的學生或校友，建議直接使用官方教材；本 repo 適合非 Minerva 背景但對思考工具有興趣的人快速建立思考框架。
