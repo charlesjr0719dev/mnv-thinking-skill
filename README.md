@@ -1,10 +1,10 @@
-# MNW Thinking Skill
+# MNV Thinking Skill
 
 > 密涅瓦思考專家——一個 Claude Code skill，當你帶著問題/決策/困惑來諮詢時，從 76 個密涅瓦思考角度（Habits of Cognition）中挑 2-4 個最合適的切入，跟你討論而不是教你。
 
 ## 這是什麼
 
-**MNW 不是導師，是思考夥伴**。它的工作是：
+**MNV 不是導師，是思考夥伴**。它的工作是：
 
 1. **診斷**——你真正的問題（常常不是表面那個）
 2. **挑角度**——從 76 個密涅瓦思考角度裡挑 2-4 個最貼題的
@@ -13,7 +13,7 @@
 ## 安裝（一行）
 
 ```bash
-git clone https://github.com/charlesjr0719dev/mnw-thinking-skill.git ~/.claude/skills/MNW
+git clone https://github.com/charlesjr0719dev/mnw-thinking-skill.git ~/.claude/skills/MNV
 ```
 
 完成。零設定、零路徑修改。
@@ -22,19 +22,19 @@ git clone https://github.com/charlesjr0719dev/mnw-thinking-skill.git ~/.claude/s
 
 在 Claude Code 對話中說以下任一句話即可觸發：
 
-- 「問問 MNW」
-- 「MNW 怎麼看」
-- 「MNW 我想請教」
+- 「問問 MNV」
+- 「MNV 怎麼看」
+- 「MNV 我想請教」
 - 「用密涅瓦角度看」
 - 「幫我用思考角度分析」
 
-或直接丟一個需要思考框架協助的問題給 MNW。
+或直接丟一個需要思考框架協助的問題給 MNV。
 
 ## 結構
 
 ```
-~/.claude/skills/MNW/
-├── SKILL.md                    # MNW skill 主檔（Claude 自動讀取）
+~/.claude/skills/MNV/
+├── SKILL.md                    # MNV skill 主檔（Claude 自動讀取）
 └── knowledge-base/
     ├── 密涅瓦思考習慣.md         # 主索引
     ├── 01-批判性思考.md         # 4 大類索引
@@ -52,9 +52,9 @@ git clone https://github.com/charlesjr0719dev/mnw-thinking-skill.git ~/.claude/s
 
 ## 如何運作
 
-當你觸發 MNW 後，Claude 會：
+當你觸發 MNV 後，Claude 會：
 
-1. 讀 `SKILL.md` 了解 MNW 的工作流
+1. 讀 `SKILL.md` 了解 MNV 的工作流
 2. 讀 `knowledge-base/密涅瓦思考習慣.md` 抓 76 個思考角度的地圖
 3. 根據你的問題挑 2-4 個角度
 4. 需要某個角度細節時才讀對應的個別筆記檔
@@ -62,9 +62,9 @@ git clone https://github.com/charlesjr0719dev/mnw-thinking-skill.git ~/.claude/s
 ## 範例對話
 
 ```
-你：MNW 我在想要不要買新筆電
+你：MNV 我在想要不要買新筆電
 
-MNW：
+MNV：
 診斷：你表面在問「要不要買」，但真正卡的是「不確定下游用途」。
 
 建議從這 2 個角度切入：
